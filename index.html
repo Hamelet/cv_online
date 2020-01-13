@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <title>CV développeur web</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".myself").click(function () {
+                $("blackbody").toggleClass("body");
+                $("body").toggleClass("blackbody");
+                $("article").toggleClass("is_close");
+                $("footer").toggleClass("is_close");
+                $(".rappel").toggleClass("is_close");
+                $(".adress").toggleClass("is_close");
+                $(".access").toggleClass("is_close");
+                $(".contact").toggleClass("is_close");
+                $(".envoyer").toggleClass("is_close");
+                $("nav").toggleClass("is_center");
+            });
+            $(".adress").click(function () {
+                $(".indic").toggleClass("bigCall");
+            });
+            $(".titre1").click(function () {
+                $(".section1").fadeToggle('slow');
+            });
+            $(".titre2").click(function () {
+                $(".section2").fadeToggle('slow');
+            });
+            $(".titre3").click(function () {
+                $(".section3").fadeToggle('slow');
+            });
+            $(".titre4").click(function () {
+                $(".comp").fadeToggle('slow');
+            });
+            $(".contact").click(function () {
+                $(".access").toggleClass("is_close");
+                $("article").toggleClass("is_close");
+                $(".rappel").toggleClass("is_close");
+                $(".mes_comp").toggleClass("is_close");
+                $(".contact").toggleClass("is_close");
+                $(".retour").toggleClass("is_close");
+            });
+            $(".retour").click(function () {
+                $("article").toggleClass("is_close");
+                $(".rappel").toggleClass("is_close");
+                $(".access").toggleClass("is_close");
+                $(".contact").toggleClass("is_close");
+                $(".retour").toggleClass("is_close");
+            });
+        });
+    </script>
+</head>
+
+<body class=" blackbody">
+    <video autoplay muted loop id="myVideo">
+        <source src="img/bg2.mp4" type="video/mp4">
+    </video>
+    <header>
+        <nav class="is_center">
+            <label for="msg" class="retour is_close">retour</label>
+            <img src="img/myself.jpg" alt="" width="200px" height="200px" class="myself">
+            <h1>JEAN-PAUL ANDREI</h1>
+            <H2>DEVELOPPEUR WEB ET WEB MOBILE</H2>
+            <!-- <img src="img/rappel.png" alt="rappel" class="rappel is_close"> -->
+            <div class="adress is_close">
+                <ul class="indic">
+                    <li>ANDREI Jean Paul</li>
+                    <li>37 rue des blabla</li>
+                    <li>363636</li>
+                    <li>blablaville</li>
+                    <li>03/11/1980</li>
+                    <li>39 ans</li>
+                    <li>permis A+B</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <article class="is_close">
+        <h1 class="titre1">EXPERIENCE PROFESSIONNELLES</h1>
+        <section class="section1 is_close">
+            <ul>
+                <li>
+                    <h3>2019 |STAGE D'IMMERSION DEVELOPPEUR WEB ET WEB MOBILE</h3>
+                    <p>
+                        HTML/CSS, découverte de Bootstrap et Jquery
+                    </p>
+                </li>
+                <li>
+                    <h3>2018-2019 | CONDUCTEUR DE LIGNE AUTOMATIQUE</h3>
+                    <p>
+                        Maitrise du chargement et du poste de sérigraphie sur une ligne automatisée.
+                    </p>
+                </li>
+                <li>
+                    <h3>2016-2018 | RESPONSABLE QUALITE</h3>
+                    <P>
+                        Normes qualités, connaissance et mise en application des normes ISO9001/14001.
+                    </P>
+                </li>
+                <li>
+                    <h3>2014-2018 | FORMATEUR</h3>
+                    <p>
+                        Formation aux postes des nouveaux arrivants. Sensibilisation aux gestes et postures et aux
+                        risques du poste.
+                    </p>
+                </li>
+                <li>
+                    <h3>2006-2008 | CONDUCTEUR DE LIGNE</h3>
+                    <p>
+                        Réglage, dépannage et utilisation d'une ligne de production.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <h1 class="titre2">FORMATIONS</h1>
+        <section class="section2 is_close">
+            <ul>
+                <li>
+                    <p>
+                        <strong>
+                            DEVELOPPEUR WEB ET WEB MOBILE AU POLE NUMERIQUE DE L'ADRAR
+                        </strong>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        HTML5/CSS3/Bootstrap/Javascript/Jquery/</br>java
+                        PHP/MySQL/Androïd/SIO/accessibilité
+
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <h1 class="titre3">LOISIRS</h1>
+        <section class="section3 is_close">
+            <ul>
+                <li>cinémas</li>
+                <li>musique</li>
+                <li>informatique</li>
+                <li>judo</li>
+                <li>escalade</li>
+            </ul>
+        </section>
+    </article>
+
+    <footer class="is_close">
+        <h1 class="titre4">MES COMPETENCES</h1>
+        <div class="comp is_close">
+            <div class="mes_comp is_close">
+                <img src="img/comp1.png" alt="" width="200em">
+                <img src="img/comp2.png" alt="" width="100em">
+                <img src="img/comp3.png" alt="" width="100em">
+                <img src="img/comp4.png" alt="" width="100em">
+                <img src="img/comp5.png" alt="" width="100em">
+            </div>
+        </div>
+        <div class="block-to-access">
+            <button class="contact is_close">contactez moi</button>
+        </div>
+        <form action="/ma-page-de-traitement" method="POST" class="access">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="mail">e-mail :</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="msg">Message :</label>
+                <textarea id="msg" name="user_message" heigth="10em"></textarea>
+            </div>
+            <div class="send">
+                <button class="envoyer is_close">envoyer</button>
+            </div>
+        </form>
+    </footer>
+</body>
+
+</html>

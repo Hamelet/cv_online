@@ -1,0 +1,311 @@
+*{
+    font-family: 'Acme', sans-serif;
+    color: whitesmoke;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+  }
+/*JQUERY*/
+.blackbody{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-110%);
+    transition: transform 0.2s ease;
+    perspective: 50;
+    color: blanchedalmond;
+    background-image: url(../img/bg2.jpg);
+    background-color: #333333;
+}
+.adress+.titre1+.titre2+.titre3+.titre4{
+    cursor: pointer;
+}
+.myself{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black, 0 0 1em blanchedalmond, 0 0 0.2em blanchedalmond;
+    cursor: pointer;
+}
+.is_close{
+    display: none;
+}
+.is_center{
+    transform: translateY(250px);
+}
+/*JQUERY*/
+/*HEADER*/
+
+nav{
+    display: flex;
+    justify-content: space-around;   
+}
+nav>label{
+    cursor: pointer;
+}
+.adress{
+    cursor: pointer;
+}
+.adress>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: black inset 2px;
+    background-color: rgba(46, 102, 102, 0);
+    list-style-type: none;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    padding-right: 30px;
+    transform: translateZ(200px);
+    transition: transform 1s ease;
+}
+.bigCall{
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    font-size: 3vw;
+    z-index: 2000;
+    letter-spacing: 10px;
+}
+/*HEADER*/
+/*CONTENT*/
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article>h1{
+    cursor: pointer;
+}
+section{    
+    /* display: inline-flex;
+    flex-direction: column;
+    justify-content: center; */
+    font-size: 1em;
+    /* margin-top: 35px; */
+    border: black inset 2px;
+    border-radius: 100%;
+    background-color: rgba(46, 102, 102, 0);
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;  
+    transition: width 0.5s ease-in-out, heigth 0.5s ease-in-out, background-color 0.5s ease-out, transform 0.5s ease-out 0.5s, z-index 0.5s ease-out 0.5s, font-size 0.5s ease-in-out ;
+    list-style-type: none;
+    z-index: 6;
+    /* shape-outside: circle(); */
+}
+.section1{
+    width: 50em;
+    height: 50em;
+    padding-top:4em;
+}
+.section1>ul>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+.section1:hover{
+    background-color: rgba(46, 102, 102, 0.6); 
+    border-radius: 100%;
+    z-index: 50; 
+    padding-top: 5em; 
+    font-size: 1.5em;
+}
+.section2{
+    width: 25em;
+    height: 20em;
+    padding-top:6em;
+}
+.section2>ul>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 1.1em;
+}
+.section2:hover{
+    background-color: rgba(46, 102, 102, 0.6); 
+    border-radius: 100%;
+    z-index: 50; 
+    padding-top: 5em; 
+    font-size: 1.5em;
+    justify-content: center;
+}
+.section3{
+    width: 10em;
+    height: 10em; 
+    padding-right: 3em;
+}
+.section3>ul>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 0.5em;
+}
+.section3:hover{
+    background-color: rgba(46, 102, 102, 0.6); 
+    border-radius: 100%;
+    z-index: 50;  
+    font-size: 2em;
+    padding-right: 1em;
+}
+/*CONTENT*/
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer>h1{
+    cursor: pointer;
+}
+.mes_comp{
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: rgba(46, 102, 102, 0);
+    font-size: 18px;
+    letter-spacing: 3px;
+    z-index: 6;
+    margin-top: 40px;
+    text-align: justify;
+}
+.mes_comp:hover{
+    display: inline-flex;
+    width: 62em;
+    justify-content: center;   
+    transition: z-index 2s ease-out 1s, background-color 1s ease;
+}
+/* CONTACT */
+/* .access{
+    display: inline;
+} */
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black inset 2px;
+    border-radius: 100px;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    padding-top: 5px;
+}
+form>div{
+    padding-top: 5px;
+    z-index: 100;
+    
+}
+.block-to-access{
+    margin-top: 40px;
+}
+.access{
+    margin-top: 40px;
+    height: 60%;
+    width: 60%;
+    font-size: 50px;
+}
+.contact{
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #22c202;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    z-index: 100;
+    
+}
+
+textarea{
+    width: 40%;
+    height: 10em;
+    color: black;
+}
+#name+#mail{
+    color: black;
+}
+.msg{
+    vertical-align: top;
+}
+.envoyer{
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #22c202;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    z-index: 100;
+}
+/* CONTACT */
+@media screen and (max-width:1000px) {
+    .is_center{
+        transform: translateY(250px);
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .indic{
+        align-items: center;
+        font-size: 30px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    article>h1{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+    section{
+        max-width: 100%;
+        margin: 10px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        font-size: 0.8em;
+    }
+    .mes_comp, .access{
+        max-width: 100%;
+        margin: 10px;
+    }
+    .mes_comp{
+        font-size: 15px;
+    }
+    .contact{
+        margin-top: 10px;
+    }
+    .access{
+        font-size: 15px;
+        padding-left: 10px;
+        border-radius: 10px;
+        margin-top: 40px;
+        height: 60%;
+        width: 60%;
+    }
+    textarea{
+        max-width: 100%;
+        height: 2em;
+    }
+    .envoyer{
+        margin-top: 30px;
+    }
+
+}
+
+
+
