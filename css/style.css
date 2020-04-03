@@ -59,7 +59,7 @@ nav>label{
     justify-content: center;
     border-radius: 40px;
     border: black inset 2px;
-    background-color: rgba(46, 102, 102, 0);
+    background-color: rgba(120, 120, 120, 0);
     list-style-type: none;
     box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     padding-right: 30px;
@@ -92,7 +92,7 @@ section{
     /* margin-top: 35px; */
     border: black inset 2px;
     border-radius: 100%;
-    background-color: rgba(46, 102, 102, 0);
+    background-color: rgba(120, 120, 120, 0);
     box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;  
     transition: width 0.5s ease-in-out, heigth 0.5s ease-in-out, background-color 0.5s ease-out, transform 0.5s ease-out 0.5s, z-index 0.5s ease-out 0.5s, font-size 0.5s ease-in-out ;
     list-style-type: none;
@@ -109,9 +109,10 @@ section{
     flex-direction: column;
     align-items: center;
     list-style-type: none;
+    padding-top: 1.5em;
 }
 .section1:hover{
-    background-color: rgba(46, 102, 102, 0.6); 
+    background-color: rgba(120, 120, 120, 0.3); 
     border-radius: 100%;
     z-index: 50; 
     padding-top: 5em; 
@@ -131,7 +132,7 @@ section{
     font-size: 1.1em;
 }
 .section2:hover{
-    background-color: rgba(46, 102, 102, 0.6); 
+    background-color: rgba(120, 120, 120, 0.3); 
     border-radius: 100%;
     z-index: 50; 
     padding-top: 5em; 
@@ -142,6 +143,7 @@ section{
     width: 10em;
     height: 10em; 
     padding-right: 3em;
+    background-color: rgba(120, 120, 120, 0)
 }
 .section3>ul>li{
     display: flex;
@@ -153,7 +155,7 @@ section{
     margin-top: 0.5em;
 }
 .section3:hover{
-    background-color: rgba(46, 102, 102, 0.6); 
+    background-color: rgba(120, 120, 120, 0.3); 
     border-radius: 100%;
     z-index: 50;  
     font-size: 2em;
@@ -172,7 +174,6 @@ footer>h1{
 .mes_comp{
     display: inline-flex;
     flex-wrap: wrap;
-    background-color: rgba(46, 102, 102, 0);
     font-size: 18px;
     letter-spacing: 3px;
     z-index: 6;
