@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <title>CV développeur web</title>
@@ -161,23 +162,23 @@
             </div>
         </div>
         <div class="block-to-access">
-            <button class="contact is_close">contactez moi</button>
+            <button class="btn btn-success contact is_close">contactez moi</button>
         </div>
-        <form action="/ma-page-de-traitement" method="POST" class="access">
-            <div>
+        <form action="mailto:andrei.jpaul@gmail.com" method="POST" class="access ">
+            <div class="form-group">
                 <label for="name">Nom :</label>
-                <input type="text" id="name" name="user_name">
+                <input type="text" id="name" name="user_name" class="form-control">
             </div>
             <div>
                 <label for="mail">e-mail :</label>
-                <input type="email" id="mail" name="user_mail">
+                <input type="email" id="mail" name="user_mail" class="form-control">
             </div>
             <div>
                 <label for="msg">Message :</label>
-                <textarea id="msg" name="user_message" heigth="10em"></textarea>
+                <textarea id="msg" name="user_message" heigth="10em" class="form-control"></textarea>
             </div>
             <div class="send">
-                <button class="envoyer is_close">envoyer</button>
+                <button class="btn btn-submit envoyer is_close ">envoyer</button>
             </div>
         </form>
     </footer>
